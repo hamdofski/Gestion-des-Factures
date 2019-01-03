@@ -1,0 +1,89 @@
+<div class="content-wrapper" style="height: 2000px;margin-left: 0vw;">
+    <section class=" content-header">
+      <div class="col-xs-12">
+        <h2> Facture</h2>
+      </div>
+    </section>
+    <section class="content" >
+      <div class="col-xs-12" id="invoice_main">
+        <div id="invoice_body">
+          <!--invoice display starts here-->
+          <div class="" id="invoice_box" style="margin-top:10px" #invoiceBox>
+            <!--head row-->
+            <div class="row ">
+              <!--left section-->
+              <div class="col-md-3">
+                <h2>logo ici</h2>
+              </div>
+              <!--right section-->
+            </div>
+            <hr>
+            <!--middle row-->
+            <div class="row " >
+              <!--left section-->
+              <div class="col-md-4 border-s"  >
+                <span> A Monsieur: </span><br>
+                <strong> nom Client</strong><br>
+                <span> Emplacement Client </span><br>
+                <span>Ville Client </span><br>
+                <span> Tunisie </span><br>
+                <span> Télephone Client </span><br>
+                <span> Email Client </span><br>
+              </div>
+              <!--right section-->
+              <div class="col-md-offset-4 border-s col-md-4" style="text-align: -webkit-right;;line-height: 2;">
+                <span> <strong>Numéro Facture: </strong> 1</span><br>
+                <span> <strong>Date Facture: </strong> 12/12/2018 </span><br>
+                <span> <strong>Paiement: </strong> date1</span> <br>
+                <span> <strong>Montant ($): </strong> 2514</span><br>
+                <br>
+              </div>
+            </div>
+            <br>
+          </div>
+          <!--table section-->
+          <div id="invoice_table">
+            <table class="table" >
+              <thead style="background-color: rgba(0, 183, 219, 0.68);">
+              <th style="height:40px;padding-left:20px">Produit</th>
+              <th>Prix</th>
+              <!--<th>VAT(%)</th>-->
+              <th style="padding-left: 200px;">Quantité</th>
+              <th style="padding-left: 200px;">Montant</th>
+              </thead>
+              <tbody>
+              <tr  >
+                <td style="padding-left:20px">Tomates</td>
+                <td>1800</td>
+                <td style="padding-left: 200px;">2</td>
+                <td style="padding-left: 200px;">3600</td>
+                </tr>
+        
+              <tr>
+                <td></td>
+                <td></td>
+                <!--<td></td>-->
+                <td style="padding-left: 200px;">
+                  <strong> Total</strong>
+                </td>
+                <td style="padding-left: 200px;">
+                  <strong> 3600</strong><br>
+                </td>
+              </tr>
+          
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+        <div style="margin-top:15px">
+          <button type="button" class="btn btn-success" (click)="downloadPDF()"><i class="fa fa-download"
+                                                                                   aria-hidden="true"></i>&nbsp;Télecharger en pdf
+          </button>
+          <button type="button" class="btn btn-success"><i class="fa fa-file-excel-o" aria-hidden="true"></i>&nbsp;Exporter
+            as CSV
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
